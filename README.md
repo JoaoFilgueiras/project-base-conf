@@ -32,3 +32,47 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+## Optional step Install PWA
+
+- [Zero Config PWA Plugin for Next.js Documentation](https://github.com/shadowwalker/next-pwa#readme) - learn about PWA Plugin for Next.js.
+
+```bash
+npm install next-pwa
+# or
+yarn add next-pwa
+```
+
+- If version next 10.0.7 and next-pwa 5.0.5 required install extesion 
+
+```bash
+npm install webpack@4
+# or
+yarn add webpack@4
+```
+
+### Step 1: withPWA
+
+- Create or Update next.config.js with
+
+``` javascript
+// eslint-disable-next-line @typescript-eslint/no-var-requires
+const withPWA = require('next-pwa')
+
+const isProd = process.env.NODE_ENV === 'production'
+module.exports = withPWA({
+  pwa: {
+    dest: 'public',
+    disable: !isProd
+  }
+})
+
+```
+- Import in _app.tsx after icon import
+
+``` javascript
+    <link rel="manifest" href="/manifest.json" />
+    <meta name="theme-color" content="#06092B" />
+```
+
+
