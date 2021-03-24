@@ -35,7 +35,9 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 
 ## Optional step Install PWA
 
-- [Zero Config PWA Plugin for Next.js Documentation](https://github.com/shadowwalker/next-pwa#readme) - learn about PWA Plugin for Next.js.
+- Learn about PWA Plugin for Next.js - [PWA Plugin for Next.js Documentation](https://github.com/shadowwalker/next-pwa#readme)
+
+### Step 1: Install PWA
 
 ```bash
 npm install next-pwa
@@ -43,7 +45,7 @@ npm install next-pwa
 yarn add next-pwa
 ```
 
-- If version `next 10.0.7` and `next-pwa 5.0.5` required install extesion 
+#### If version `next 10.0.7` and `next-pwa 5.0.5` required install extesion 
 
 ```bash
 npm install webpack@4
@@ -51,7 +53,7 @@ npm install webpack@4
 yarn add webpack@4
 ```
 
-### Step 1: withPWA
+### Step 2: Configure PWA
 
 - Create or Update next.config.js with
 
