@@ -43,7 +43,7 @@ npm install next-pwa
 yarn add next-pwa
 ```
 
-- If version next 10.0.7 and next-pwa 5.0.5 required install extesion 
+- If version `next 10.0.7` and `next-pwa 5.0.5` required install extesion 
 
 ```bash
 npm install webpack@4
